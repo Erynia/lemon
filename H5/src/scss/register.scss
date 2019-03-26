@@ -1,0 +1,31 @@
+.wrapper{
+	.header{
+		a{
+			color: #000;
+		}
+	}
+	input{
+		margin: 0;
+		border-radius: 10px;
+	}
+	.go-back{
+		font-size: 18px;
+	}
+	.register-btn{
+		background: #FEE241;
+		font-size: 20px;
+		border-radius: 10px;
+	}
+	p{
+		padding: 5px 20px;
+		input[type="checkbox"]{
+			position: relative;
+			top: 2px;
+			width: 16px;
+			height: 16px;
+		}
+	}
+	.user-name{
+		margin-top: 10px;
+	}
+}
