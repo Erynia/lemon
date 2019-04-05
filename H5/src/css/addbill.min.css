@@ -1,0 +1,203 @@
+@charset "UTF-8";
+html, body, .wrapper {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  overflow: hidden; }
+  .wrapper p {
+    margin-bottom: 0; }
+  .wrapper em {
+    font-style: normal; }
+  .wrapper .mui-indicator {
+    border-radius: 0;
+    width: 20px;
+    height: 2px;
+    background: #fff; }
+  .wrapper .mui-indicator.mui-active {
+    background: #FEE241; }
+  .wrapper .header {
+    padding: 0 10px 6px 10px;
+    background: #FEE241; }
+    .wrapper .header .H-title {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      line-height: 40px;
+      color: black;
+      overflow: hidden; }
+    .wrapper .header .H-tab {
+      position: relative;
+      left: 28px;
+      padding-top: 5px;
+      display: flex; }
+    .wrapper .header .H-total {
+      margin: 0;
+      padding: 20px 0 0 0;
+      width: 100%;
+      line-height: 40px;
+      font-weight: bold;
+      border: 0;
+      border-bottom: 2px solid black;
+      font-size: 36px;
+      text-align: center;
+      color: black;
+      background: #FEE241; }
+  .wrapper .main {
+    height: 100%; }
+    .wrapper .main input {
+      color: #333;
+      background: #eee; }
+    .wrapper .main .M-menu {
+      height: 200px;
+      display: flex;
+      background: white; }
+    .wrapper .main .M-redact {
+      height: 100%; }
+
+.H-title span {
+  line-height: 40px; }
+
+.H-title em {
+  height: 40px;
+  padding-top: 6px; }
+  .H-title em img {
+    width: 86px; }
+
+.H-tab li {
+  height: 28px;
+  padding: 0 10px;
+  line-height: 28px;
+  border: 1px solid black; }
+  .H-tab li.active {
+    color: #FEE241;
+    background: black; }
+
+.H-tab li:nth-of-type(1) {
+  border-right: 0;
+  border-radius: 14px 0 0 14px; }
+
+.H-tab li:nth-of-type(3) {
+  border-left: 0;
+  border-radius: 0 14px 14px 0; }
+
+.M-menu li {
+  width: 25%; }
+
+.M-menu p {
+  width: 25%;
+  padding: 12px 0 0 0;
+  text-align: center; }
+
+.M-menu .menu-wrap {
+  display: flex;
+  height: 100%; }
+  .M-menu .menu-wrap .icon-container {
+    display: flex;
+    width: 375px;
+    flex-wrap: wrap; }
+
+.M-menu .icon {
+  margin: 0 auto;
+  padding: 6px 0;
+  display: block;
+  width: 52px;
+  font-size: 36px;
+  color: black;
+  background: #eee;
+  border-radius: 50%; }
+  .M-menu .icon.active {
+    background: #FEE241; }
+
+.M-menu .icon-describe {
+  line-height: 25px;
+  font-size: 12px;
+  border: 0; }
+
+.M-redact h6 {
+  display: flex;
+  margin: 1px 0;
+  justify-content: space-around;
+  background: #fff;
+  line-height: 40px; }
+  .M-redact h6 .icon {
+    position: relative;
+    top: 2px; }
+  .M-redact h6 span {
+    line-height: 40px; }
+  .M-redact h6 em {
+    padding: 0 0 0 4px;
+    font-size: 15px; }
+
+.M-redact p {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  background: #fff; }
+  .M-redact p span {
+    width: 50px;
+    line-height: 50px;
+    text-align: center; }
+  .M-redact p strong {
+    width: 70px; }
+  .M-redact p input {
+    margin: 5px 0;
+    border: 0;
+    outline: none; }
+
+.M-redact .calculator {
+  height: 100%;
+  display: flex; }
+  .M-redact .calculator strong.active {
+    background: #FEE241; }
+  .M-redact .calculator ul {
+    width: 100%;
+    height: 100%; }
+    .M-redact .calculator ul li {
+      display: flex;
+      justify-content: space-around;
+      line-height: 60px;
+      font-size: 40px;
+      font-family: '黑体'; }
+      .M-redact .calculator ul li strong {
+        display: block;
+        margin: 1px;
+        width: 33%;
+        padding: 2px 0px;
+        text-align: center;
+        background: #fff; }
+      .M-redact .calculator ul li .delete {
+        background: #fff url(../images/icon5.jpg) no-repeat center center;
+        background-size: 100% 78%; }
+  .M-redact .calculator dl {
+    width: 100px;
+    display: flex;
+    flex-direction: column; }
+    .M-redact .calculator dl dt, .M-redact .calculator dl dd {
+      height: 20%; }
+    .M-redact .calculator dl dt {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      .M-redact .calculator dl dt strong {
+        margin: 1px;
+        padding: 22px 0;
+        width: 47%;
+        text-align: center;
+        font-size: 30px;
+        background: white; }
+    .M-redact .calculator dl dd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      background: #FEE241; }
+    .M-redact .calculator dl .submit {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center; }

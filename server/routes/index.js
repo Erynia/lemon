@@ -13,7 +13,5 @@ router.post('/login',classify.userInfo);
 //=> 用户注册接口
 router.post('/register',classify.userInfo);
 
-//=> 用户账单信息接口
-router.post("/billList",classify.billList)
 
 module.exports = router;

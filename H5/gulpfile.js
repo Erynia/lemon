@@ -36,7 +36,10 @@ gulp.task("webserver",() => {
         proxies: [
        	    {source:"/api/login",target:"http://localhost:3000/login"},
 			{source:"/api/register",target:"http://localhost:3000/register"},
-			{source:"/api/bill_list",target:"http://localhost:3000/users/bill_list"},
+            {source:"/api/bill_list",target:"http://localhost:3000/users/bill_list"},
+            {source:"/api/bill_class",target:"http://localhost:3000/users/bill_class"},
+            {source:"/api/add_bill",target:"http://localhost:3000/users/add_bill"},
+            {source:"/api/delete_bill",target:"http://localhost:3000/users/delete_bill"}
         ]
     }))
 })

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Erynia/staticFile/master/favicon.ico" />
+    <title>Commitment</title>
+    <link rel="stylesheet" href="../../css/reset.min.css">
+    <link rel="stylesheet" href="../../css/mui.min.css">
+    <link rel="stylesheet" href="../../css/mui.picker.min.css">
+    <link rel="stylesheet" href="../../css/addbill.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h6 class="H-title">
+                <span class="mui-icon mui-icon-back go-back"></span>
+                <ul class="H-tab">
+                    <li class="tab-options active" data-classify="expend">支出</li>
+                    <li class="tab-options" data-classify="income">收入</li>
+                    <li class="tab-options" data-classify="transfer">转账</li>
+                </ul>
+                <em><img src="../../images/icon1.jpg" alt=""></em>
+            </h6>
+            <input class="H-total" value="0.00">
+        </header>
+        <main class="main">
+            <div id="Gallery" class="mui-slider M-menu">
+                <div class="mui-slider-group menu-wrap">
+                    <!-- <div class="mui-slider-item icon-container">
+                        <p data-name="${item.name}>
+                        	<span class=" ${index> 0 ? item.icon : item.icon + " active"} icon" data-icon="${item.icon}"></span>
+                            <strong class="icon-describe">${item.name}</strong>
+                        </p>
+                        <p>
+                            <span class="mui-icon mui-icon-plus icon"></span>
+                            <strong class="icon-describe">自定义</strong>
+                        </p>
+                    </div> -->
+                </div>
+                <div class="mui-slider-indicator focus">
+                    <div class="mui-indicator mui-active"></div>
+                </div>
+            </div>
+            <div class="M-redact">
+                <h6>
+                    <strong><span class="mui-icon mui-icon-list icon"></span><em class="timer"></em></strong>
+                    <strong><span class="mui-icon mui-icon-compose icon"></span><em>个人账单</em></strong>
+                    <strong><span class="mui-icon mui-icon-help-filled icon"></span><em>不选账户</em></strong>
+                </h6>
+                <p>
+                    <strong>备注 :</strong>
+                    <input class="remarks" type="text">
+                    <span class="mui-icon mui-icon-paperclip"></span>
+                </p>
+                <div class="calculator">
+                    <ul>
+                        <li>
+                            <strong class="number">7</strong>
+                            <strong class="number">8</strong>
+                            <strong class="number">9</strong>
+                        </li>
+                        <li>
+                            <strong class="number">4</strong>
+                            <strong class="number">5</strong>
+                            <strong class="number">6</strong>
+                        </li>
+                        <li>
+                            <strong class="number">1</strong>
+                            <strong class="number">2</strong>
+                            <strong class="number">3</strong>
+                        </li>
+                        <li>
+                            <strong class="number">.</strong>
+                            <strong class="number">0</strong>
+                            <strong class="number delete">×</strong>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dt>
+                            <strong class="number">-</strong>
+                            <strong class="number">×</strong>
+                            <strong class="number">+</strong>
+                            <strong class="number">÷</strong>
+                        </dt>
+                        <dd>
+                            <strong class="submit">完成</strong>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../../js/libs/require.js" defer async="true" data-main="../../js/user/addBill.js"></script>
+</body>
+</html>

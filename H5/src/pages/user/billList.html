@@ -5,59 +5,65 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css">
+		<link rel="stylesheet" href="../../css/mui.poppicker.css">
+		<link rel="stylesheet" href="../../css/billList.min.css">
+		<link rel="icon"  type="image/icon" href="https://raw.githubusercontent.com/Erynia/staticFile/master/favicon.ico">
 	</head>
 	<body>
 	<section class="wrapper">
 		<header class="header">
-			<header class="mui-bar mui-bar-nav">
-				<h1 class="mui-title">标题</h1>
-			</header>
-		</header>
-		<!-- 侧滑导航根容器 -->
-		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-			<!-- 菜单容器 -->
-			<aside class="mui-off-canvas-left">
-				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<!-- 菜单具体展示内容 -->
-						...
-					</div>
-				</div>
-			</aside>
-			<!-- 主页面容器 -->
-			<div class="mui-inner-wrap">
-				<!-- 主页面标题 -->
-				<header class="mui-bar mui-bar-nav">
-					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-					<h1 class="mui-title">标题</h1>
-				</header>
-				<div class="mui-content mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<!-- 主界面具体展示内容 -->
-						...
-					</div>
-				</div>
+			<div class="title" data-id="1">
+				<strong class="left"><img src="../../images/menu.jpg" alt=""></strong>
+				<strong class="center">柠檬记账</strong>
+				<strong class="right"><img src="../../images/icon1.jpg" alt=""></strong>
 			</div>
-		</div>
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
-				<span class="mui-icon mui-icon-home"></span>
-				<span class="mui-tab-label">首页</span>
-			</a>
-			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-pengyouquan"></span>
-				<span class="mui-tab-label">圈子</span>
-			</a>
-			<a class="mui-tab-item">		
-				<span class="mui-icon mui-icon-email"></span>
-				<span class="mui-tab-label">发现</span>
-			</a>
-			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-gear"></span>
-				<span class="mui-tab-label">我的</span>
-			</a>
-		</nav>
+			<section class="top">
+				<p><em>本<b class="curTime">月</b>支出(元)</em><strong><span id="timerMonth">月</span><span id="timer"></span></strong></p>
+				<h2 class="total">--.--</h2>
+				<p><strong>本<b class="curTime">月</b>收入 <em class="incomeTotal">--.--</em></strong> <strong>本<b class="curTime">月</b>结余 <em class="curSurplus">--.--</em></strong></p>
+			</section>
+			<div class="main-tab">
+				<p>
+					<strong class="left"><img src="../../images/icon2.jpg" alt=""></strong>
+					<span><em class="active">账单</em><em>图表</em></span>
+					<strong class="right"><img src="../../images/icon3.jpg" alt=""></strong>
+				</p>
+			</div>
+		</header>
+		<main class="main">
+			<ul class="mui-table-view bill" id="bill">
+				<!-- <dl>
+					<dt class="bill-date"><em>01月07日</em><strong><span>支出 </span><span>15689.09</span></strong></dt>
+					<dd>
+						<p>
+							<strong>
+								<span class="mui-icon mui-icon-contact"></span>
+								<em>小汽车</em>
+							</strong>
+							<b class="income red">213797.000</b>
+						</p>
+						<p>
+							<strong>
+								<span class="mui-icon mui-icon-contact"></span>
+								<em>薪资</em>
+							</strong>
+							<b class="expend green">213797.000</b>
+						</p>
+					</dd>
+				</dl> -->
+			</ul>
+		</main>
+		<footer class="footer">
+			<strong><img class="add-bill" src="../../images/icon4.jpg" alt=""></strong>
+			<ul>
+				<li><i></i><span>首页</span></li>
+				<li><i></i><span>圈子</span></li>
+				<li><i></i><span>发现</span></li>
+				<li><i></i><span>我的</span></li>
+			</ul>
+		</footer>
 	</section>
-	<script src="../../js/libs/require.js" defer async="true" data-main="../../js/userBill.js"></script>
+	<script src="../../js/libs/require.js" defer async="true" data-main="../../js/user/index.js"></script>
 	</body>
 </html>
